@@ -10,7 +10,7 @@ body {
 	 background-color: F23208;
 }
 .button {
-  background-color: #088BD3;
+  background-color: #088BD4;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -23,7 +23,7 @@ body {
 }
 
 .form-signin {
-  max-width: 330px;
+  max-width: 430px;
   padding: 15px;
   margin: 0 auto;
 }

@@ -65,6 +65,13 @@ session_start();
         </div>
         <button name="Submit" value="Login" class="button" type="submit">Sign in</button>
 
+        <div class="container">
+            <label>
+                <a href="signup.php">Sign Up</a>
+            </label>
+        </div>
+
+
     </form>
 
     <?php
@@ -73,12 +80,12 @@ session_start();
     /* isset — Determine if a variable is declared and is different than NULL*/
     if(isset($_POST['Submit']))
     {
-       $cleanName = test_input("Username");
-       $cleanPassword = test_input("Username");
+       $cleanName = test_input("username");
+       $cleanPassword = test_input("username");
 
         /* Check if the form's username and password matches */
         /* these currently check against variable values stored in config.php but later we will see how these can be checked against information in a database*/
-        if( ($_POST['Username'] == $Username) && ($_POST['Password'] == $Password))
+        if( ($_POST['firstname'] == $Username) && ($_POST['password'] == $Password))
         {
             //echo 'Success';
             /*Success: set session variables and redirect to protected page*/
